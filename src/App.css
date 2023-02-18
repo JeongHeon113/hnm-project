@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+.login-area{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  padding: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-area span{
+  padding-left: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list li{
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-list li:hover{
+  color: rgb(220, 14, 30);
+  border-radius: 10px;
+  font-weight: 700;
+}
+.menu-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}.menu-area{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.search-area{
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+@media screen and (max-width:1199px) {
+  .menu-area{
+    position: inherit;
+  }
+  .search-area{
+    left:10px;
+    top:10px
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width:992px) {
+  .menu-area{
+    display: none;
+  }
+}
+@media screen and (min-width: 991.9px){
+  .side-bar{
+    display: none;
+  }
+}
+.side-bar input{
+  border: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  padding-left:  25px;
+  outline: none;
+  width: 140px;
+}
+.search-area input{
+  border: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  padding-left:  25px;
+  outline: none;
+}
+.search-icon{
+  position: relative;
+  left: 18px;
+}
+.product-card img{
+  width: 100%;
+}
+.product-card:hover{
+  transform: scale(1.05);
+}
+.product-card{
+  padding: 10px;
+  cursor: pointer;
+}
+.logo img{
+  cursor: pointer;
+}
+.detail-product img{
+  width: 100%;
+  padding: 50px;
+}
+.title{
+  font-size: x-large;
+  margin: 50px 0;
+}
+.side-menu{
+  position: fixed;
+  background-color: rgb(220, 14, 30);
+  height: 100vh;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+.side-menu-list{
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side-menu-list div{
+  cursor: pointer;
+  margin: 20px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  color:rgb(238, 227, 227)
+}
+.side-menu-list div:hover{
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+.close-side{
+  font-size: x-large;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.side-bar{
+  position: absolute;
+  left: 10px;
+  padding: 10px;
+}
+.bar{
+  cursor: pointer;
 }
